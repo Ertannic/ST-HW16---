@@ -13,6 +13,7 @@
 		524B49F42BE78F3C009DC176 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 524B49F32BE78F3C009DC176 /* Base */; };
 		524B49F62BE78F3E009DC176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B49F52BE78F3E009DC176 /* Assets.xcassets */; };
 		524B49F92BE78F3E009DC176 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 524B49F82BE78F3E009DC176 /* Base */; };
+		524B4A012BE793ED009DC176 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B4A002BE793ED009DC176 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		524B49F52BE78F3E009DC176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524B49F82BE78F3E009DC176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524B49FA2BE78F3E009DC176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524B4A002BE793ED009DC176 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				524B49F52BE78F3E009DC176 /* Assets.xcassets */,
 				524B49F72BE78F3E009DC176 /* LaunchScreen.storyboard */,
 				524B49FA2BE78F3E009DC176 /* Info.plist */,
+				524B4A002BE793ED009DC176 /* Joke.swift */,
 			);
 			path = "ST-HW16 - Саралаев Ержан";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				524B49F12BE78F3C009DC176 /* ViewController.swift in Sources */,
 				524B49ED2BE78F3C009DC176 /* AppDelegate.swift in Sources */,
 				524B49EF2BE78F3C009DC176 /* SceneDelegate.swift in Sources */,
+				524B4A012BE793ED009DC176 /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
