@@ -8,10 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData(urlRequest: "https://api.magicthegathering.io/v1/cards")
+        getData(urlRequest: "https://api.magicthegathering.io/v1/cards?name=Black%20Lotus")
     }
     
     func getData(urlRequest: String) {
@@ -39,12 +39,12 @@ class ViewController: UIViewController {
             }
             
             do {
-                let decodedData = try JSONDecoder().decode(Cat.self, from: data)
+                let decodedData = try JSONDecoder().decode(CardResponse.self, from: data)
                 for card in decodedData.cards {
                     print("Имя карты: \(card.name)")
                     print("Тип: \(card.type)")
-                    print("Мановая стоимость: \(card.manaCost)")
-                    print("Название сета: \(card.setName.rawValue)")
+                    print("Мановая стоимость: \(card.manaCost ?? "Неизвестно")")
+                    print("Название сета: \(card.setName)")
                     print("----------------------------------")
                 }
             } catch {
@@ -54,3 +54,4 @@ class ViewController: UIViewController {
         }.resume()
     }
 }
+

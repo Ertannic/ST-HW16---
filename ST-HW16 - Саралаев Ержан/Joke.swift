@@ -7,17 +7,17 @@
 
 import Foundation
 
-
-// MARK: - Cat
-struct Cat: Codable {
+// MARK: - CardResponse
+struct CardResponse: Codable {
     let cards: [Card]
 }
 
 // MARK: - Card
 struct Card: Codable {
-    let name, manaCost: String
+    let name: String
+    let manaCost: String?
     let type: String
-    let setName: SetName
+    let setName: String
 }
 
 enum SetName: String, Codable {
